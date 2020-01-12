@@ -14,7 +14,7 @@ public class BinarySearch {
             return -1;
         }
 
-
+//      Check if the middle element is the array is the key, if not split the array and search in one half.
         int mid = (left+right)/2;
 
 //        if(left==right)

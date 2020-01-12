@@ -22,9 +22,11 @@ public class MajorityElement {
         int leftCount=0;
         int rightCount=0;
 
+        //check if both the leftMajority and Right Majority are the same
         if(leftMaj==rightMaj)
             return leftMaj;
         else{
+            //If there's no left Majority, check if the right Majority is Majority in the entire set and Vice Versa
             if(leftMaj==-1){
                 rightCount = getCout(a,rightMaj,left,right);
                 if(rightCount>(right-left)/2){
@@ -41,6 +43,7 @@ public class MajorityElement {
                 else
                     return -1;
             }
+            //If both left and right recurrences has a majority and are not same, check the majority on the entire set.
             else {
                 leftCount = getCout(a,leftMaj,left,right);
                 rightCount = getCout(a,rightMaj,left,right);
