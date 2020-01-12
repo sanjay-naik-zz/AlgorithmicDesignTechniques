@@ -13,6 +13,7 @@ public class Sorting {
         int x=a[l];
         int j=l;
         int k=l;
+        //Seggregate values >x,=x and <x
         for(int i=l+1;i<=r;i++){
             if(a[i]<=x){
                 j=j+1;
